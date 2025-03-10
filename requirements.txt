@@ -1,0 +1,6 @@
+lxml==4.9.3              # Para manipulación de XML
+cryptography==42.0.2     # Para firma digital con CSD
+pyOpenSSL==24.0.0        # Para trabajar con certificados
+requests==2.31.0         # Para enviar el XML al PAC
+pyOpenSSL
+

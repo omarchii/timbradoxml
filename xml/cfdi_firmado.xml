@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:Comprobante xmlns:ns0="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="A" Folio="12345" Fecha="2024-03-05T12:00:00" FormaPago="01" CondicionesDePago="Contado" SubTotal="1000.00" Moneda="MXN" Total="1160.00" TipoDeComprobante="I" MetodoPago="PUE" LugarExpedicion="64000" Sello="epVJDuDxlpSCB/1ZUKHuAt8lkqab+r/2XJa03eB6dT49dQfXtpIQgYp74UBbILmYRR84qRlnn9uNCe94gVb3iQVNNEdIKrfJyet8B+MXQCTx/BJ/vJk3Fo9yERiyF1JryHCRPqE50SZK+dsFKsF3n6hqOvv0YQBrXEFzpGMbGoWdEQAyUxNEP7nKUnjrbjds0Tx/kX0TLqVpt+Lc/XhyTD6ix/3B0pqyHSCJSX/CpMM2EwUd3L9H2gtT3+J0PpUeHCEWLtrDR5iDlz/SQ7uuVrBZ5M1ag8AmqQfmr1IuiAqShiAPF1Fgg0TYXL54Tr/41uohFbE+46Irb56ANVwObg==">
+
+    <ns0:Emisor Rfc="AAA010101AAA" Nombre="EMPRESA EMISORA S.A. DE C.V." RegimenFiscal="601" />
+    
+    <ns0:Receptor Rfc="BBB020202BBB" Nombre="CLIENTE EJEMPLO" UsoCFDI="G03" />
+    
+    <ns0:Conceptos>
+        <ns0:Concepto ClaveProdServ="01010101" Cantidad="1" ClaveUnidad="H87" Descripcion="Producto de prueba" ValorUnitario="1000.00" Importe="1000.00">
+            
+            <ns0:Impuestos>
+                <ns0:Traslados>
+                    <ns0:Traslado Base="1000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="160.00" />
+                </ns0:Traslados>
+            </ns0:Impuestos>
+        </ns0:Concepto>
+    </ns0:Conceptos>
+
+    <ns0:Impuestos TotalImpuestosTrasladados="160.00">
+        <ns0:Traslados>
+            <ns0:Traslado Base="1000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="160.00" />
+        </ns0:Traslados>
+    </ns0:Impuestos>
+
+</ns0:Comprobante>
