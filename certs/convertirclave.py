@@ -8,7 +8,7 @@ CSD_KEY_DER = os.path.join(BASE_DIR, "CSD.key")  # Archivo original en formato D
 CSD_KEY_PEM = os.path.join(BASE_DIR, "CSD_pem.key")  # Archivo convertido a PEM
 
 # Pedir la contraseña de forma segura
-CSD_PASSWORD = getpass.getpass("🔑 Ingresa la contraseña del CSD: ")
+CSD_PASSWORD = getpass.getpass(" Ingresa la contraseña del CSD: ")
 
 # Ruta absoluta de OpenSSL en Windows
 OPENSSL_PATH = r"C:\Program Files\OpenSSL-Win64\bin\openssl.exe"
@@ -26,7 +26,7 @@ try:
     result = subprocess.run(openssl_command, capture_output=True, text=True, check=True)
 
     if result.returncode == 0:
-        print(f"✅ La clave privada ha sido convertida correctamente a PEM: {CSD_KEY_PEM}")
+        print(f" La clave privada ha sido convertida correctamente a PEM: {CSD_KEY_PEM}")
     else:
         print(f"Error en OpenSSL: {result.stderr}")
 
