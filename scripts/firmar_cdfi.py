@@ -13,12 +13,12 @@ XML_PATH = os.path.join(BASE_DIR, "xml", "cfdi.xml")  # XML original
 SIGNED_XML_PATH = os.path.join(BASE_DIR, "xml", "cfdi_firmado.xml")  # XML firmado
 
 # 📌 Pedir la contraseña para desencriptar la clave privada
-CSD_PASSWORD = b"BCAO2425"  # 🔹 Reemplázala con tu contraseña real
+CSD_PASSWORD = b"?????"   
 
 # 📌 Verificar que los archivos existen antes de continuar
 for file_path in [CSD_CER, CSD_KEY, XML_PATH]:
     if not os.path.exists(file_path):
-        raise FileNotFoundError(f"❌ Error: No se encontró el archivo {file_path}")
+        raise FileNotFoundError(f" Error: No se encontró el archivo {file_path}")
 
 # 📌 Leer el XML CFDI
 tree = ET.parse(XML_PATH)
@@ -49,5 +49,5 @@ root.set("Sello", sello_digital)
 # 📌 Guardar el XML firmado
 tree.write(SIGNED_XML_PATH, encoding="utf-8", xml_declaration=True)
 
-print(f"✅ XML firmado correctamente: {SIGNED_XML_PATH}")
+print(f" XML firmado correctamente: {SIGNED_XML_PATH}")
 
